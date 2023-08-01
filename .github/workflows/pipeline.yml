@@ -1,9 +1,7 @@
 name: pipeline
 
 on:
-  workflow_dispatch:
-    # branches:
-    #   - "release/**"
+  - pull_request
 
 jobs:
   buildAndTest:
