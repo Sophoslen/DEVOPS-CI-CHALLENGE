@@ -1,14 +1,12 @@
-name: CI Pipeline
 on:
   pull_request:
-
     branches:
       - "release/**"
 
 jobs:
-  build-and-test:
+  buildAndTest:
     runs-on: ubuntu-latest
-
+    
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
