@@ -1,7 +1,8 @@
 on:
   pull_request:
-    branches:
-      - "release/**"
+    # Sequence of patterns matched against refs/heads
+    branches:    
+      - 'releases/**'
 
 jobs:
   buildAndTest:
