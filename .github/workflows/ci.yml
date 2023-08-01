@@ -14,3 +14,6 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: "15.14.0"
+      
+      - name: "install dependencies"
+        run: "npm start --prefix ./codebase/rdicidr-0.1.0"
